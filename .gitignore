@@ -1,0 +1,31 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Plataformas: se generan en CI con `flutter create --platforms=android`
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+.metadata
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+
+# Firmas
+*.jks
+*.keystore
+key.properties
