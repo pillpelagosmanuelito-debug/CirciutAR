@@ -53,6 +53,9 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
+      - name: Generar el ícono de la app
+        run: flutter pub run flutter_launcher_icons
+
       - name: Verificación ligera de imports e identificadores
         run: python3 tools/check_imports.py
 
