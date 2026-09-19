@@ -70,8 +70,8 @@ void main() {
     test('la escala logarítmica es reversible', () {
       expect(log.toSliderPosition(100), closeTo(1 / 3, 1e-9));
       expect(log.fromSliderPosition(1 / 3), closeTo(100, 1e-6));
-      expect(log.fromSliderPosition(-1), 10);
-      expect(log.fromSliderPosition(2), 10000);
+      expect(log.fromSliderPosition(-1), closeTo(10, 1e-9));
+      expect(log.fromSliderPosition(2), closeTo(10000, 1e-6));
     });
 
     test('los parámetros discretos se redondean', () {

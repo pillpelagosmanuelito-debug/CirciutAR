@@ -45,6 +45,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('CircuitAR'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('Componentes pasivos'), 200);
     expect(find.text('Componentes pasivos'), findsWidgets);
 
     await tester.tap(find.text('Catálogo').last);

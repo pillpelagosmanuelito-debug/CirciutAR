@@ -37,7 +37,7 @@ class SectionCard extends StatelessWidget {
                 Expanded(
                   child: Text(title, style: theme.textTheme.titleMedium),
                 ),
-                if (trailing != null) trailing!,
+                if (trailing != null) Flexible(child: trailing!),
               ],
             ),
             const SizedBox(height: 12),
@@ -132,6 +132,8 @@ class TagChip extends StatelessWidget {
       ),
       child: Text(
         label,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
         style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: color,
               fontWeight: FontWeight.w600,
